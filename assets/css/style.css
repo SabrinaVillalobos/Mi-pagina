@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Raleway;
+}
+
+#cont {
+  background-color: gray;
+  height: 50px;
+  width: 100%;
+}
+
+.header {
+  background-image: url("../img/1920x400.jpg");
+  height: 400px;
+/*  background-size: contain;*/
+  background-repeat: no-repeat;
+}
+
+#block1{
+  background-color:red;
+  height: 334px;
+}
+
+#block2 {
+  background-color: yellow;
+}
+
+#footer {
+  background-color: #343A40;
+  height: 120px;
+}
+
+@media (min-width: 1px) and (max-width: 450px) {
+  [class*="col-"] {
+    max-width: 100%;
+  }
+}
