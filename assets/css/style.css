@@ -1,30 +1,27 @@
-* {
+* { /*normaliza cuerpo*/
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: Raleway;
-  color:#fff;
+  color: #fff;
   list-style-type: none;
   cursor: default;
 }
-
 .navbtn {
-  float:left;
+  float: left;
   list-style-type: none;
   background-color: #BD0216;
   height: 55px;
   width: 100%;
 }
-
-.stbts{
-  float:left;
+.stbts {
+  float: left;
   font-weight: bold;
-  cursor:pointer;
+  cursor: pointer;
 }
-a:hover{
-  color:#FDE450;
+a:hover {
+  color: #FDE450;
 }
-
 li {
   float: right;
   padding-right: 1%;
@@ -33,12 +30,10 @@ li {
   padding-bottom: 0;
   font-weight: bold;
 }
-
-a{
+a {
   text-decoration: none;
-  cursor:pointer;
+  cursor: pointer;
 }
-
 #img1 {
   background-image: url("../img/1920x400.jpg");
   background-size: cover;
@@ -48,15 +43,14 @@ a{
   background-position: top;
   background-size: 100% 100%;
 }
-
-img{
-  border:#fff solid 20px;
+img {
+  border: #fff solid 20px;
   border-left: 0;
   border-top: 0;
   border-bottom: 0;
   width: 100%;
 }
-p.onom{
+p.onom {
   font-size: 40px;
   text-align: center;
   color: white;
@@ -69,32 +63,34 @@ p.onom{
   width: 100%;
   background-color: #BD0216;
 }
-
 .txtf {
   text-align: center;
   padding-top: 40px;
   font-weight: bold;
-  color:#fff;
+  color: #fff;
 }
-
-.wwd,.cnt {
+.wwd,
+.cnt {
   padding-left: 0;
 }
-.wwdtxt, h2, p{
-  color:#000;
+.wwdtxt,
+h2,
+p {
+  color: #000;
 }
 h2 {
   font-size: 30px;
   padding-bottom: 0;
-  color:#646464;;
+  color: #646464;
+  ;
 }
-#lorem{
-  padding:10px;
+#lorem {
+  padding: 10px;
   padding-top: 0;
 }
 .btn {
   color: #fff;
-  cursor:pointer;
+  cursor: pointer;
   background-color: #BD0216;
   border-radius: 5px;
   height: 47px;
@@ -106,33 +102,31 @@ h2 {
 .btn:hover {
   background-color: #800505;
 }
-h2{
-  padding:10px;
+h2 {
+  padding: 10px;
   padding-bottom: 0;
 }
 #block {
   border: 1px #C9C9C9 solid;
 }
-
-.imgs1{
+.imgs1 {
   background-image: url("../img/1-300x200.jpg");
   background-repeat: no-repeat;
   height: 200px;
 }
-.imgs2{
+.imgs2 {
   background-image: url("../img/2-300x200.jpg");
   background-repeat: no-repeat;
   height: 200px;
 }
-.imgs3{
+.imgs3 {
   background-image: url("../img/hors-doeuvres-1-300x200.jpg");
   background-repeat: no-repeat;
   height: 200px;
 }
-
 .btn2 {
   color: #fff;
-  cursor:pointer;
+  cursor: pointer;
   background-color: #BD0216;
   border-radius: 5px;
   height: 47px;
@@ -140,54 +134,59 @@ h2{
   vertical-align: middle;
   line-height: 50px;
   font-weight: 400;
-  margin-left:10px;
+  margin-left: 10px;
   font-size: 14px;
 }
-
 .btn2:hover {
   background-color: #800505;
 }
-
 .borderbtn {
   background-color: #EDEDED;
-  border:0;
+  border: 0;
   border-top: 1px #C9C9C9 solid;
   height: 64px;
   width: 100%;
 }
-
-.row{
+.row {
   padding-bottom: 15px;
 }
-
-.nnc{
+.nnc {
   line-height: 37px;
   font-weight: bold;
 }
-
-.fa-bars{
-  float:right;
+.fa-bars {
+  float: right;
   cursor: pointer;
 }
-
-.fa-bars:before{
+#mail {
+  color: #BD0216;
+}
+.e {
+  display: inline-block;
+}
+.fa-bars:before {
   line-height: 37px;
 }
-
-@media (max-width: 575px){
-li{
+@media (max-width: 575px) { /*breakpoint, desaparece menu, aparece el de hamburguesa y cambia la imagen baner a una de 920x400*/
+  li {
+    display: none;
+    }
+    #img1 {
+      background-image: url("../img/920x400.jpg");
+    }
+    .imgs1,
+    .imgs2,
+    .imgs3 {
+      margin-left: auto;
+      margin-right: auto;
+      background-size: cover;
+    }
+}
+@media (min-width: 576px) {/*breakpoint, pantallas grandes no muestran menu de hamburguesa*/
+  .nnc {
     display: none;
   }
-  #img1{
-    background-image:url("../img/920x400.jpg");
-  }
-}
-
-@media (min-width: 576px){
-  .nnc{
-    display:none;
-  }
-  i.fa.fa-bars{
+  i.fa.fa-bars {
     display: none;
   }
 }
