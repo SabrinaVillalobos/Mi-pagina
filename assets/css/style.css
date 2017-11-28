@@ -5,6 +5,7 @@
   font-family: Raleway;
   color:#fff;
   list-style-type: none;
+  cursor: default;
 }
 
 .navbtn {
@@ -18,6 +19,10 @@
 .stbts{
   float:left;
   font-weight: bold;
+  cursor:pointer;
+}
+a:hover{
+  color:#FDE450;
 }
 
 li {
@@ -31,6 +36,7 @@ li {
 
 a{
   text-decoration: none;
+  cursor:pointer;
 }
 
 #img1 {
@@ -64,21 +70,41 @@ img{
   color:#fff;
 }
 
+.wwd,.cnt {
+  padding-left: 0;
+}
 .wwdtxt, h2, p{
   color:#000;
 }
-
+h2 {
+  font-size: 30px;
+  padding-bottom: 0;
+  color:#646464;;
+}
 #lorem{
-  padding:20px;
+  padding:10px;
+  padding-top: 0;
 }
 .btn {
-  color: #000;
+  color: #fff;
+  cursor:pointer;
+  background-color: #BD0216;
+  border-radius: 5px;
+  height: 47px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  font-weight: 400;
+}
+.btn:hover {
+  background-color: #800505;
 }
 h2{
-  padding:20px;
+  padding:10px;
+  padding-bottom: 0;
 }
 #block {
-  border: 1px red solid;
+  border: 1px #C9C9C9 solid;
 }
 
 .imgs1{
@@ -95,4 +121,34 @@ h2{
   background-image: url("../img/hors-doeuvres-1-300x200.jpg");
   background-repeat: no-repeat;
   height: 200px;
+}
+
+.btn2 {
+  color: #fff;
+  cursor:pointer;
+  background-color: #BD0216;
+  border-radius: 5px;
+  height: 47px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  font-weight: 400;
+  margin-left:10px;
+  font-size: 14px;
+}
+
+.btn2:hover {
+  background-color: #800505;
+}
+
+.borderbtn {
+  background-color: #EDEDED;
+  border:0;
+  border-top: 1px #C9C9C9 solid;
+  height: 64px;
+  width: 100%;
+}
+
+.row{
+  padding-bottom: 15px;
 }
